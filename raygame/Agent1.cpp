@@ -2,6 +2,7 @@
 #include "SpriteComponent.h"
 #include "Goal.h"
 #include "GameManager.h"
+#include "SeekBSComponent.h"
 
 Agent1::Agent1(float x, float y, const char* name, float maxForce, float maxSpeed, float health) : Character(x, y, name, maxForce, maxSpeed, health)
 {
@@ -17,6 +18,11 @@ void Agent1::start()
 {
 	Character::start();
 	//add steering behaviours here
+
+	SeekBSComponent* seekBall = new SeekBSComponent();
+	seekBall->setSteeringForce(50);
+	
+
 }
 
 void Agent1::update(float deltaTime)
