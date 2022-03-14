@@ -46,6 +46,11 @@ public:
 	/// </summary>
 	Goal* getRightGoal() { return m_agent2Goal; }
 
+	/// <summary>
+	/// Returns the ball. The ball is no longer updated when carried by an agent.
+	/// </summary>
+	Actor* getBall();
+
 private:
 	void resetPositions();
 

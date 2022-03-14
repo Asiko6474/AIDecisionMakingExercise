@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
@@ -166,7 +166,9 @@
     <ClCompile Include="Player.cpp" />
     <ClCompile Include="ScoreBoard.cpp" />
     <ClCompile Include="Scene.cpp" />
+    <ClCompile Include="SeekComponentZ.cpp" />
     <ClCompile Include="SpriteComponent.cpp" />
+    <ClCompile Include="StateComponentZ.cpp" />
     <ClCompile Include="Transform2D.cpp" />
     <ClCompile Include="UITextComponent.cpp" />
   </ItemGroup>
@@ -190,7 +192,9 @@
     <ClInclude Include="Player.h" />
     <ClInclude Include="ScoreBoard.h" />
     <ClInclude Include="Scene.h" />
+    <ClInclude Include="SeekComponentZ.h" />
     <ClInclude Include="SpriteComponent.h" />
+    <ClInclude Include="StateComponentZ.h" />
     <ClInclude Include="SteeringComponent.h" />
     <ClInclude Include="Transform2D.h" />
     <ClInclude Include="UITextComponent.h" />
