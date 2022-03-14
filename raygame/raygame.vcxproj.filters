@@ -86,6 +86,15 @@
     <ClCompile Include="SeekBSComponent.cpp">
       <Filter>Components</Filter>
     </ClCompile>
+    <ClCompile Include="StateMachineBSComponent.cpp">
+      <Filter>Components</Filter>
+    </ClCompile>
+    <ClCompile Include="FleeBSComponent.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="WanderBSComponent.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Scene.h">
@@ -159,6 +168,15 @@
     </ClInclude>
     <ClInclude Include="SeekBSComponent.h">
       <Filter>Components</Filter>
+    </ClInclude>
+    <ClInclude Include="StateMachineBSComponent.h">
+      <Filter>Components</Filter>
+    </ClInclude>
+    <ClInclude Include="FleeBSComponent.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="WanderBSComponent.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

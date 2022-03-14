@@ -157,6 +157,7 @@
     <ClCompile Include="Collider.cpp" />
     <ClCompile Include="Component.cpp" />
     <ClCompile Include="Engine.cpp" />
+    <ClCompile Include="FleeBSComponent.cpp" />
     <ClCompile Include="GameManager.cpp" />
     <ClCompile Include="Goal.cpp" />
     <ClCompile Include="InputComponent.cpp" />
@@ -168,8 +169,10 @@
     <ClCompile Include="Scene.cpp" />
     <ClCompile Include="SeekBSComponent.cpp" />
     <ClCompile Include="SpriteComponent.cpp" />
+    <ClCompile Include="StateMachineBSComponent.cpp" />
     <ClCompile Include="Transform2D.cpp" />
     <ClCompile Include="UITextComponent.cpp" />
+    <ClCompile Include="WanderBSComponent.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AABBCollider.h" />
@@ -183,6 +186,7 @@
     <ClInclude Include="Collider.h" />
     <ClInclude Include="Component.h" />
     <ClInclude Include="Engine.h" />
+    <ClInclude Include="FleeBSComponent.h" />
     <ClInclude Include="GameManager.h" />
     <ClInclude Include="Goal.h" />
     <ClInclude Include="InputComponent.h" />
@@ -193,9 +197,11 @@
     <ClInclude Include="Scene.h" />
     <ClInclude Include="SeekBSComponent.h" />
     <ClInclude Include="SpriteComponent.h" />
+    <ClInclude Include="StateMachineBSComponent.h" />
     <ClInclude Include="SteeringComponent.h" />
     <ClInclude Include="Transform2D.h" />
     <ClInclude Include="UITextComponent.h" />
+    <ClInclude Include="WanderBSComponent.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

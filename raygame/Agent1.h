@@ -3,6 +3,8 @@
 #include "MoveComponent.h"
 #include "ActorArray.h"
 #include "SeekBSComponent.h"
+#include "FleeBSComponent.h"
+class WanderBSComponent;
 
 class Agent1 :
     public Character
@@ -26,6 +28,8 @@ public:
 private:
     MoveComponent* m_moveComponent;
     SeekBSComponent* m_seekComponent;
+    FleeBSComponent* m_fleeComponent;
+    WanderBSComponent* m_wanderComponent;
     DynamicArray<SteeringComponent*> m_steeringComponent;
     MathLibrary::Vector2 m_force;
 };
