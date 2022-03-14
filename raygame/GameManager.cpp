@@ -60,6 +60,11 @@ void GameManager::increasePoints(Character* character)
 	}
 }
 
+Actor* GameManager::getBall()
+{
+	return m_ball;
+}
+
 void GameManager::resetPositions()
 {
 	m_agent1->dropBall();

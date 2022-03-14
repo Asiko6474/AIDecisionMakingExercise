@@ -3,6 +3,16 @@
 
 class moveComponent;
 class steeringComponents;
+class SeekComponentZ;
+
+enum State
+{
+    HUNTBALL,
+    HUNTENEMY,
+    HUNTGOAL,
+    DODGE
+
+};
 
 class Agent2 :
     public Character
@@ -22,7 +32,9 @@ public:
     virtual void update(float deltaTime) override;
     virtual void onDeath();
     virtual void onDamageRecieved() {};
-
+private:
+    SeekComponentZ* m_seekComponent;
+    State m_currentState;
 };
 
 

@@ -5,7 +5,8 @@ enum State
 {
 	HUNTBALL,
 	HUNTENEMY,
-	HUNTGOAL
+	HUNTGOAL,
+	DODGE
 	
 };
 
@@ -27,5 +28,6 @@ private:
 	float m_seekForce;
 	float m_wanderForce;
 	float m_seekRange = 300;
+	Actor* m_target;
 };
 

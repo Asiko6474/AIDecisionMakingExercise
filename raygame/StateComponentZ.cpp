@@ -17,6 +17,7 @@ void StateComponenetZ::update(float deltaTime)
 {
 	MathLibrary::Vector2 targetPos = m_seekComponent->getTarget()->getTransform()->getWorldPosition();
 	MathLibrary::Vector2 ownerPos = getOwner()->getTransform()->getWorldPosition();
+	
 	float distanceFromTarget = (targetPos - ownerPos).getMagnitude();
 
 	bool targetInRange = distanceFromTarget <= m_seekRange;
@@ -28,6 +29,7 @@ void StateComponenetZ::update(float deltaTime)
 		break;
 	case HUNTENEMY:
 		m_seekComponent->setSteeringForce(150);
+		
 		break;
 	case HUNTGOAL:
 		m_seekComponent->setSteeringForce(50);
