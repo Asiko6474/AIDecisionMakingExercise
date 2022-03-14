@@ -1,5 +1,8 @@
 #pragma once
 #include "Character.h"
+#include "MoveComponent.h"
+#include "ActorArray.h"
+#include "SeekBSComponent.h"
 
 class Agent1 :
     public Character
@@ -19,5 +22,11 @@ public:
     virtual void update(float deltaTime) override;
     virtual void onDeath();
     virtual void onDamageRecieved() {};
+
+private:
+    MoveComponent* m_moveComponent;
+    SeekBSComponent* m_seekComponent;
+    DynamicArray<SteeringComponent*> m_steeringComponent;
+    MathLibrary::Vector2 m_force;
 };
 

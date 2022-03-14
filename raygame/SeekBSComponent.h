@@ -5,5 +5,9 @@ class SeekBSComponent :
 {
 public:
 	MathLibrary::Vector2 calculateForce() override;
+	
+
+private:
+	MathLibrary::Vector2 m_seekPos;
 };
 
