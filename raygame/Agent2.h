@@ -1,6 +1,9 @@
 #pragma once
 #include "Character.h"
 
+class moveComponent;
+class steeringComponents;
+
 class Agent2 :
     public Character
 {
@@ -19,6 +22,7 @@ public:
     virtual void update(float deltaTime) override;
     virtual void onDeath();
     virtual void onDamageRecieved() {};
+
 };
 
 

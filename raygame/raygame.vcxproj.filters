@@ -35,9 +35,6 @@
     <ClCompile Include="AABBCollider.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Transform2D.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="ActorArray.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -82,6 +79,15 @@
     </ClCompile>
     <ClCompile Include="ScoreBoard.cpp">
       <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Transform2D.cpp">
+      <Filter>Components</Filter>
+    </ClCompile>
+    <ClCompile Include="SeekComponentZ.cpp">
+      <Filter>Components</Filter>
+    </ClCompile>
+    <ClCompile Include="StateComponentZ.cpp">
+      <Filter>Components</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -153,6 +159,12 @@
     </ClInclude>
     <ClInclude Include="ScoreBoard.h">
       <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SeekComponentZ.h">
+      <Filter>Components</Filter>
+    </ClInclude>
+    <ClInclude Include="StateComponentZ.h">
+      <Filter>Components</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
