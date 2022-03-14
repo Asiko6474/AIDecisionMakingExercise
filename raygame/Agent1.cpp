@@ -24,20 +24,23 @@ void Agent1::onCollision(Actor* actor)
 void Agent1::start()
 {
 	Character::start();
+
 	//add steering behaviours here
+
 	m_moveComponent = addComponent<MoveComponent>();
 	//Seek Component Added
 	m_seekComponent = addComponent<SeekBSComponent>();
-	m_seekComponent->setSteeringForce(500);
+	m_seekComponent->setSteeringForce(50);
 	m_seekComponent->setTarget(GameManager::getInstance()->getBall());
+	
 
-	m_fleeComponent = addComponent<FleeBSComponent>();
-	m_fleeComponent->setTarget(GameManager::getInstance()->getAgent2());
+	/*m_fleeComponent = addComponent<FleeBSComponent>();
+	m_fleeComponent->setTarget();*/
 	
 	/*WanderBSComponent* wanderComponent = new WanderBSComponent(100, 100, 100);
 	wanderComponent = addComponent<WanderBSComponent>();
 	addComponent<WanderBSComponent>();*/
-	addComponent<StateMachineBSComponent>();
+	//addComponent<StateMachineBSComponent>();
 
 }
 
@@ -46,8 +49,9 @@ void Agent1::update(float deltaTime)
 	Character::update(deltaTime);
 	if (getHasBall())
 	{
-		m_seekComponent->setTarget(GameManager::getInstance()->getRightGoal());
-		m_fleeComponent->setTarget(GameManager::getInstance()->getAgent2());
+		
+		//m_seekComponent->setTarget(GameManager::getInstance()->getRightGoal());
+		//m_fleeComponent->setTarget(GameManager::getInstance()->getAgent2());
 	}
 }
 
